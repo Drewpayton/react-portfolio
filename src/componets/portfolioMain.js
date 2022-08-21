@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
 import Navbar from './Navbar';
+import Footer from './Footer'
 
 export default function PortfolioMain() {
 const [ currentPage, setCurrentPage ] = useState('Home')
@@ -25,6 +26,7 @@ return (
     <>
     <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
     {renderPage()}
+    < Footer />
     </>
 )
 }

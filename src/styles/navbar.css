@@ -1,3 +1,7 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 nav {
     border-bottom: 1px solid black;
 }
@@ -7,6 +11,15 @@ nav {
     font-weight: bolder;
     margin-left: 50px;
 }
+
+.webdev {
+    border-radius: 50px;
+    background: burlywood;
+    border: 2px solid black;
+    padding: 0 5px 0 5px;
+}
+
+
 
 .text-custom {
     font-size: 20px;
@@ -19,6 +32,64 @@ nav {
     color: red !important;
 }
 
+.headText {
+    width: 50%;
+    
+}
+
+.headText h1, p {
+    margin: 10% 10% 0 10%; 
+}
+
+.headText p {
+    display: flex;
+    font-size: 35px;
+}
+
 body {
     background: linear-gradient(90deg, whitesmoke 50%, #E7DECD 50%);
+}
+
+ .footer {
+    margin: 0;
+    position: fixed;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+    height: 25vh;
+    background: rgb(23, 23, 23);
+    color: whitesmoke;
+ }
+
+ .footerText {
+    margin-left: 10%;
+    font-size: 25px;
+    margin-top: 10%;
+ }
+ @media screen and (max-width: 900px) {
+    .headText p {
+        font-size: 18px;
+    }
+}
+
+ @media screen and (max-width: 480px) {
+    .footerText {
+        margin: 10% 0 0 10%;
+        font-size: 15px;
+     
+     }
+     .headText h1{
+        font-size: 20px;
+        margin: 5% 20% 0 5%;
+    }
+
+    .headText p {
+        font-size: 13px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    
 }
