@@ -7,7 +7,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand drewText">Drew</a>
+    <h2 class="navbar-brand drewText">Drew</h2>
       <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
         <li class="nav-item">
             <a class="nav-link active text-custom"

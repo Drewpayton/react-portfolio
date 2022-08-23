@@ -8,9 +8,11 @@ import Footer from './Footer'
 export default function PortfolioMain() {
 const [ currentPage, setCurrentPage ] = useState('Home')
 
+const handlePageChange = (page) => setCurrentPage(page);
+
 const renderPage = () => {
     if (currentPage === "Home") {
-       return <Home />
+       return <Home handlePageChange={handlePageChange}/>
     }
     if (currentPage === "Work") {
         return <Work />
@@ -20,7 +22,7 @@ const renderPage = () => {
      }
 }
 
-const handlePageChange = (page) => setCurrentPage(page);
+
 
 return (
     <>

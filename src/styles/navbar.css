@@ -14,9 +14,8 @@ nav {
 
 .webdev {
     border-radius: 50px;
-    background: burlywood;
-    border: 2px solid black;
-    padding: 0 5px 0 5px;
+    background: #E7DECD;
+    padding: 0 10px 0 10px;
 }
 
 
@@ -29,12 +28,37 @@ nav {
 .text-big {
     font-size: 20px;
     font-weight: bold;
-    color: red !important;
+    color: orangered !important;
+}
+
+.hirebtn {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+    font-size: large;
+    padding: 15px 35px 15px 35px;
+    box-shadow: 10px 5px 5px rgb(72, 72, 72);
 }
 
 .headText {
     width: 50%;
-    
+    display: inline-block;
+}
+
+.hirebtn:hover {
+    border: 3px solid black;
+}
+
+.projectsbtn:hover {
+    color: orangered;
+}
+
+.projectsbtn {
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    margin: auto 10%;
 }
 
 .headText h1, p {
@@ -61,10 +85,33 @@ body {
     color: whitesmoke;
  }
 
+ .rightimg {
+    width: 50%;
+    display: inline-block;
+    position: fixed;
+ }
+
+ .rightimg img {
+    display:flex;
+    margin:100px auto;
+ }
+
  .footerText {
-    margin-left: 10%;
+    display: inline-flex;
+    margin-left: 5%;
     font-size: 25px;
-    margin-top: 10%;
+    margin-top: 5%;
+    width: 35%;
+ }
+ .footText {
+    display: inline-flex;
+    width: 25%;
+    font-size: 25px;
+ }
+
+ .footText a {
+    color: whitesmoke;
+    margin: 13px;
  }
  @media screen and (max-width: 900px) {
     .headText p {
@@ -81,6 +128,13 @@ body {
      .headText h1{
         font-size: 20px;
         margin: 5% 20% 0 5%;
+    }
+    .hirebtn {
+        background-color: orangered;
+        border: 1px solid orangered;
+        color: white;
+        font-size: smaller;
+        padding: 5px 15px 5px 15px;
     }
 
     .headText p {
