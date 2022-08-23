@@ -49,6 +49,29 @@ nav {
     border: 3px solid black;
 }
 
+.imgText {
+    display: inline-flex;
+    margin: 0px auto;
+}
+
+.contactPage,
+.contactPagetwo {
+    display: flex;
+    width: 50%;
+}
+
+.contactPagetwo div {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin-left: 0 auto;
+}
+
+.contactPagetwo a {
+    color: black;
+}
+
+
 .projectsbtn:hover {
     color: orangered;
 }
@@ -59,6 +82,31 @@ nav {
     text-decoration: none;
     display: flex;
     margin: auto 10%;
+}
+
+.contactPage a {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.contactPagetwo a:hover {
+    color: orangered;
+}
+
+.contactPagetwo div a button:hover {
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 100px;
+    opacity: 30%;
+    margin: 50px auto;
 }
 
 .headText h1, p {
@@ -91,9 +139,17 @@ body {
     position: fixed;
  }
 
+ .rightimg p {
+    display: flex;
+    max-width: 75%;
+    margin: 0px auto;
+ }
+
  .rightimg img {
     display:flex;
     margin:100px auto;
+    border-radius: 100%;
+    /* border: 2px solid black; */
  }
 
  .footerText {
@@ -117,7 +173,36 @@ body {
     .headText p {
         font-size: 18px;
     }
+
+    .rightimg img {
+        display:flex;
+        max-width: 50px;
+        margin:100px auto;
+        border-radius: 100%;
+        border: 2px solid black;
+     }
+
+     .circle {
+        width: 50px;
+        height: 50px;
+        background-color: grey;
+        border-radius: 100px;
+        opacity: 30%;
+        margin: 50px auto;
+    }
+
+    .contactPage a svg{
+    width: 20px;
+    height:20px;
 }
+
+.contactPage a {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+}
+
 
  @media screen and (max-width: 480px) {
     .footerText {
@@ -140,6 +225,35 @@ body {
     .headText p {
         font-size: 13px;
     }
+
+    .rightimg img {
+        display:flex;
+        max-width: 150px;
+        margin: 50px auto;
+        border-radius: 100%;
+        border: 2px solid black;
+     }
+
+     .contactPage a {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .circle {
+        width: 35px;
+        height: 35px;
+        background-color: grey;
+        border-radius: 100px;
+        opacity: 30%;
+        margin: 50px auto;
+    }
+
+    .contactPage a svg{
+        width: 15px;
+        height:15px;
+    }
+
 }
 
 
