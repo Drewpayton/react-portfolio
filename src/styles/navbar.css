@@ -45,6 +45,10 @@ nav {
     display: inline-block;
 }
 
+.cirBack {
+    display: inline-block;
+}
+
 .hirebtn:hover {
     border: 3px solid black;
 }
@@ -54,21 +58,26 @@ nav {
     margin: 0px auto;
 }
 
-.contactPage,
-.contactPagetwo {
-    display: flex;
+.contactPage{
+    display: inline-block;
     width: 50%;
 }
 
-.contactPagetwo div {
-    display: flex;
-    justify-content: center;
-    width: 25%;
-    margin-left: 0 auto;
+.contactPage svg {
+    margin-left: 25%;
 }
 
-.contactPagetwo a {
-    color: black;
+.rightImgContact {
+   display: inline-flex;
+    width: 50%;
+}
+
+.rightImgContact img {
+  margin: auto;
+  border-radius: 100px;
+}
+.contactPage svg {
+    margin-top: 35%;
 }
 
 
@@ -86,15 +95,18 @@ nav {
 
 .contactPage a {
     display: flex;
-    margin-left: 25px;
-    margin-top: 25px;
+    /* margin-left: 27px;
+    margin-top: 26px; */
+    justify-content: center;
+
+    color: black;
 }
 
-.contactPagetwo a:hover {
+.contactPage a:hover {
     color: orangered;
 }
 
-.contactPagetwo div a button:hover {
+.contactPage div a button:hover {
     background-color: orangered;
     color: whitesmoke;
 }
@@ -106,7 +118,7 @@ nav {
     background-color: grey;
     border-radius: 100px;
     opacity: 30%;
-    margin: 50px auto;
+    margin: 60px 100px;
 }
 
 .headText h1, p {
@@ -169,6 +181,29 @@ body {
     color: whitesmoke;
     margin: 13px;
  }
+
+ @media screen and (max-width: 1200px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-color: grey;
+        border-radius: 100px;
+        opacity: 30%;
+        margin: 50px auto;
+    }
+
+    .contactPage a {
+        font-size: 10px;
+        margin: 0px 50px;
+    }
+    .contactPage svg {
+      justify-content: center;
+      margin-left: 25% ;
+      display: inline-flex;
+    }
+    
+}
+
  @media screen and (max-width: 900px) {
     .headText p {
         font-size: 18px;
@@ -188,23 +223,42 @@ body {
         background-color: grey;
         border-radius: 100px;
         opacity: 30%;
-        margin: 50px auto;
+        margin: 5px auto;
     }
 
-    .contactPage a svg{
-    width: 20px;
-    height:20px;
+    .contactPage svg{
+    width: 25px;
+    height:25px;
 }
 
 .contactPage a {
     display: flex;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-bottom: 25px;
 }
+.rightImgContact img {
+   width: 200px;
+   border-radius: 100px;
+  }
 }
 
 
  @media screen and (max-width: 480px) {
+
+    .rightimg p {
+        font-size: small;
+    }
+    .cirBack {
+        display: block;
+    }
+
+    .rightImgContact img {
+        width: 150px;
+        border-radius: 100px;
+       }
+
     .footerText {
         margin: 10% 0 0 10%;
         font-size: 15px;
@@ -237,7 +291,8 @@ body {
      .contactPage a {
         display: flex;
         margin-left: 10px;
-        margin-top: 10px;
+        font-size: 10px;
+        margin-top: 2%;
     }
 
     .circle {
@@ -246,10 +301,10 @@ body {
         background-color: grey;
         border-radius: 100px;
         opacity: 30%;
-        margin: 50px auto;
+        margin: 30px auto;
     }
 
-    .contactPage a svg{
+    .contactPage svg{
         width: 15px;
         height:15px;
     }
@@ -258,6 +313,3 @@ body {
 
 
 
-@media screen and (max-width: 1200px) {
-    
-}
