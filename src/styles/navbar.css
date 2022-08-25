@@ -2,6 +2,112 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.oneinside {
+    opacity: 1;
+}
+
+div.one {
+    background: url("../assets/project2main.PNG") no-repeat center;
+}
+
+div.two {
+    background: url("../assets/project1main.PNG") no-repeat center;
+}
+
+div.three {
+    background: url("../assets/socialnetworkapi.PNG") no-repeat center;
+}
+
+div.four {
+    background: url("../assets/texteditormain.png") no-repeat center;
+}
+
+div.five {
+    background: url("../assets/e-Commercedatabase.PNG") no-repeat center;
+}
+.one h4,
+.one a,
+.two h4,
+.two a,
+.three h4,
+.three a,
+.four h4,
+.four a,
+.five h4,
+.five a {
+    visibility: hidden;
+}
+
+div.one:hover a,
+div.one:hover h4,
+div.two:hover a,
+div.two:hover h4,
+div.three:hover a,
+div.three:hover h4,
+div.four:hover a,
+div.four:hover h4,
+div.five:hover a,
+div.five:hover h4 {
+    visibility: visible;
+    margin: 15px;
+}
+
+div.one a:hover,
+div.one a h4:hover,
+div.two a:hover,
+div.two a h4:hover,
+div.three a:hover,
+div.three a h4:hover,
+div.four a:hover,
+div.four a h4:hover,
+div.five a:hover,
+div.five a h4:hover {
+    color: orangered;
+    opacity: 1;
+}
+
+div.one,
+div.two,
+div.three,
+div.four,
+div.five {
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 225px;
+    width: 375px;
+    transition: opacity .5s;
+    color: white;
+}
+
+div.one {
+    color: black !important;
+}
+
+div.one:hover,
+div.two:hover,
+div.three:hover,
+div.four:hover,
+div.five:hover {
+    opacity: 40%;
+}
+
+
+.workimg div {
+    display: inline-flex;
+    border: 2px solid black;
+    margin: 6vw;
+   
+}
+
+.card {
+    background-image: url('../assets/github-port.png') !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 nav {
     border-bottom: 1px solid black;
 }
@@ -246,6 +352,20 @@ body {
 
 
  @media screen and (max-width: 480px) {
+
+    div.one,
+    div.two,
+    div.three,
+    div.four,
+    div.five {
+        background-size: cover;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 175px;
+        width: 300px;
+    }
+    
 
     .rightimg p {
         font-size: small;
