@@ -2,14 +2,6 @@ import "bootstrap/dist/css/bootstrap.css";
 
 export default function Work() {
   return (
-    // <div class="workimg">
-    //   <img src={image1} alt="my project"></img>
-    //   <img src={image1} alt="my project"></img>
-    //   <img src={image1} alt="my project"></img>
-    //   <img src={image1} alt="my project"></img>
-    //   <img src={image1} alt="my project"></img>
-    // </div>
-
     <div class="workimg">
       <div class="one">
         <a
